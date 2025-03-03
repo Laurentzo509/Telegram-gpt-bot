@@ -72,4 +72,4 @@ if __name__ == "__main__":
     # Démarrer Flask sur le port spécifié
     app.run(host='0.0.0.0', port=PORT)
     # Démarrer le bot Telegram en mode polling
-    bot.polling()
+    bot.polling(none_stop=True)  # none_stop=True pour éviter que le bot ne s'arrête en cas d'erreur
